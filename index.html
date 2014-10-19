@@ -18,39 +18,87 @@
 <body>
   <div class="container">
     <header class="row page-header">
-      <div class="col-md-3" id ="logo">
-        <img src="http://placekitten.com/g/120/120" alt = "cover">
+      <div class="col-md-3 text-center">
+        <img class="title-logo" src="http://placekitten.com/g/120/120" alt = "cover">
       </div>
-      <div class="col-md-9" id="header">
-        <h1 class="title">Rasheed Bustamam <br><small>Front-End Wizard</small></h1>
+      <div class="col-md-9 text-right" >
+        <h1 class="title-super text-thin">Rasheed Bustamam <br><small>Front-End Wizard</small></h1>
       </div>
     </header>
 
-    <div class="row" id="cover">
+    <div class="row" class="img-responsive" id="cover">
       <!-- <img src="http://placekitten.com/g/900/600" alt="moon"> -->
     </div>
 
     <div class="row">
       <h2>Featured Work</h2>
     </div>
-    <div class="row" id="work">
-      <div class="col-md-4">
-        <img src="assets/img/cellular.png" height="200" width="300" alt = "cellular"><br>
+    <div class="row text-center">
+      <div class="col-md-4 text-center">
+        <img class="img-responsive text-center" src="assets/img/cellular.png" height="200" width="300" alt="cellular" data-toggle="modal" data-target="#project1"><br>
         <a href="https://www.khanacademy.org/cs/spin-off-of-cellular-automaton-with-slider/4951690635116544">Fresh Tomatoes</a>
       </div>
       <div class="col-md-4">
-        
-        <img src="assets/img/cellular.png" height="200" width="300" alt = "cellular"><br>
+        <img class="img-responsive text-center" src="assets/img/cellular.png" height="200" width="300" alt="cellular" data-toggle="modal" data-target="#project2"><br>
         <a href="https://www.khanacademy.org/cs/spin-off-of-cellular-automaton-with-slider/4951690635116544">Cellular Automaton</a>
 
       </div>
       <div class="col-md-4">
-        <img src="http://placekitten.com/g/300/200" alt = "cover">
+        <img class='img-responsive text-center' src="http://placekitten.com/g/300/200" alt = "cover" data-toggle="modal" data-target="#project3"><br>
+        <a href="#">Project 3</a>
       </div>
     </div>
   </div>
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/g/300/200">
+          This was my first project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/g/300/200">
+          This was my first project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/g/300/200">
+          This was my first project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
