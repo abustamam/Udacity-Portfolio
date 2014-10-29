@@ -1,28 +1,44 @@
 * {
-   /*outline: 1px solid red !important;*/
-}
-* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 } 
 
+/* Responsive First! */
+
+@media (max-width: 991px) {
+  h1,
+  h2,
+  h4 {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .title-logo {
+    display: block;
+    margin: 40px auto 0;
+  }
+}
+
+/* Header */
+
 .page-header{
   border-bottom: 1px solid #000
 }
 
-h1, h2{
+.title-logo {
+  margin-top: 40px;
+}
+
+h1, 
+h2{
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Playfair Display SC', serif;
-}
-
-body {
-  background-image: url("../img/quartz.png");
-  background-repeat: repeat;
-  background-size: 100% auto;
-  background-attachment: fixed;
 }
 
 h2 {
@@ -37,89 +53,29 @@ h2 {
   font-size: 60px;
 }
 
-.title-logo {
-  margin-top: 20px;
+/* Body */
+
+body {
+  background-image: url(../img/gold.png);
+  background-repeat: repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 
 .img-center {
   margin: 0 auto;
 }
 
-#cover {
-  height: 600px;
-  background-image: url('http://placekitten.com/g/900/600');
-  background-repeat: no-repeat;
-  background-position: center;
+img {
+   padding:1px;
+   border:1px solid;
 }
 
-.grid {
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.row {
-  width: 100%;
+section {
+  margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;
 }
 
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-.description {
-  max-width: 705px;
-}
-
-.image {
-  max-width: 460px;
-}
-
-.app {
-  display: flex;
+#featured-header {
+  margin-bottom: 10px;
 }
