@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rasheed Bustamam Portfolio</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="row page-header">
+      <div class="col-md-3 text-center">
+        <img class="title-logo" src="assets/img/RB Logo.png" alt="logo">
+      </div>
+      <div class="col-md-9 text-right" >
+        <h1 class="title-super text-thin">Rasheed Bustamam<br><small>Front-End Wizard</small></h1>
+      </div>
+    </header>
+
+    <section id="cover-img" class="row">
+      <div class="col-md-12">
+        <img class="img-responsive img-center img-rounded" src="assets/img/cover.png" alt="The World is at Your Horizon">
+      </div>
+    </section>
+
+    <section id="featured-work">
+      <div class="row" id="featured-header">
+        <h2>Featured Work</h2>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 text-center">
+          <img class="img-responsive img-center img-rounded" src="assets/img/p1.png" height="200" width="300" alt="portfolio image" data-toggle="modal" data-target="#project1"><br>
+          <a href="#" data-toggle="modal" data-target="#project1">From Mockup to Website</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center img-rounded" src="assets/img/resume.png" height="200" width="300" alt="resume image" data-toggle="modal" data-target="#project2"><br>
+          <a href="#" data-toggle="modal" data-target="#project2">Interactive Resume</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center img-rounded" src="assets/img/bugger.png" height="200" width="300" alt="bugger image" data-toggle="modal" data-target="#project3"><br>
+          <a href="#" data-toggle="modal" data-target="#project3">Bugger</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center img-rounded" src="assets/img/pizza.png" height="200" width="300" alt="pizza image" data-toggle="modal" data-target="#project4"><br>
+          <a href="#" data-toggle="modal" data-target="#project4">Pizzaria</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center img-rounded" src="assets/img/Groupon.png" height="200" width="300" alt="groupon image" data-toggle="modal" data-target="#project5"><br>
+          <a href="#" data-toggle="modal" data-target="#project5">Groupon Map</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center img-rounded" src="assets/img/Feedreader.png" height="200" width="300" alt="feedreader image" data-toggle="modal" data-target="#project6"><br>
+          <a href="#" data-toggle="modal" data-target="#project6">Feedreader</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="1" role="dialog" aria-labelledby="proj1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="proj1">Project 1: Mockup to Website</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/img/p1.png" alt="Project 1 image">
+          <p>This was my first project in the Nanodegree program. I used HTML5 and CSS3 to create a basic webpage from a mock-up. Very meta. Technologies used: HTML5, CSS3</p>
+          <p><a href="http://abustamam.github.io/rb-port/">Link</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project2" tabindex="2" role="dialog" aria-labelledby="proj2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="proj2">Project 2: Interactive Resume</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/img/resume.png" alt="Project 2 image">
+          <p>This was my second project in the Nanodegree program. I used JSON and basic object-oriented JS to populate a predefined template. Technologies used: JSON, JavaScript</p>
+          <p><a href="http://abustamam.github.io/resume/">Link</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project3" tabindex="3" role="dialog" aria-labelledby="proj3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="proj3">Project 3: Classic Arcade Game Clone</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/img/bugger.png" alt="Project 3 image">
+          <p>This was my third project in the Nanodegree program. The game was created using HTML Canvas and pseudoclassical JavaScript. Technologies used: HTML5 Canvas, JavaScript, jQuery</p>
+          <p><a href="http://abustamam.github.io/bugger/">Link</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project4" tabindex="4" role="dialog" aria-labelledby="proj4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="proj4">Project 4: Mobile Portfolio Optimization</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/img/bugger.png" alt="Project 4 image">
+          <p>This was the fourth project of the Udacity Nanodegree program. The goal was to optimize, with regards to Google Page Speed Insights and FPS, a portfolio page. Technologies used: Gulp.js, NPM</p>
+          <p><a href="http://abustamam.github.io/mobile-portfolio/">Link</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project5" tabindex="5" role="dialog" aria-labelledby="proj5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="proj5">Project 5: Groupon Map</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/img/Groupon.png" alt="Project 5 image">
+          <p>This was the fifth project of the Udacity Nanodegree Program. The goal was to make an interactive map that shows places of interest nearby. In this case, it was Groupon deals! Technologies used: JavaScript, Gulp.js, Knockout.js</p>
+          <p><a href="http://abustamam.github.io/Neighborhood-Map/">Link</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project6" tabindex="6" role="dialog" aria-labelledby="proj6" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="proj6">Project 6: Feedreader (Jasmine Testing)</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/img/Feedreader.png" alt="Project 6 image">
+          <p>This was the sixth project of the Udacity Nanodegree program. The goal was to make a feedreader by using test-driven development. Technologies used: Jasmine-Node</p>
+          <p><a href="http://abustamam.github.io/feedreader/">Link</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
