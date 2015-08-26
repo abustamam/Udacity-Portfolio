@@ -89,7 +89,7 @@
           <hr class="small">
           <h3>Front-end Developer. Life-long Learner.</h3>
           <p class="lead">Experienced in HTML5, CSS3, JavaScript, jQuery</p>
-          <a href="#skills" class="btn btn-light btn-lg">Check out all my skills</a>
+          <a href="#skills" class="btn btn-light btn-lg">Check out my skills</a>
         </div>
     </section>
 
@@ -169,34 +169,43 @@
                     <h2>Portfolio</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/Groupon.png">
-                                </a>
+                                <img class="img-portfolio img-responsive img-rounded" alt="bugger image" src="assets/img/bugger.png" data-toggle="modal" data-target="#project3">
+                                <a href="#" data-toggle="modal" data-target="#project3">Bugger</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/pizza.png">
-                                </a>
+                              <img class="img-portfolio img-responsive img-rounded" alt="bugger image" src="assets/img/Groupon.png" data-toggle="modal" data-target="#project5">
+                              <a href="#" data-toggle="modal" data-target="#project5">Groupon Map</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/Feedreader.png">
-                                </a>
+                              <img class="img-responsive img-portfolio img-rounded" src="assets/img/Feedreader.png" alt="feedreader image" data-toggle="modal" data-target="#project6">
+                              <a href="#" data-toggle="modal" data-target="#project6">Feedreader</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-4">
+                          <img class="img-responsive img-center img-rounded" src="assets/img/pizza.png" height="200" width="300" alt="pizza image" data-toggle="modal" data-target="#project4"><br>
+                          <a href="#" data-toggle="modal" data-target="#project4">Pizzaria</a>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="img-responsive img-center img-rounded" src="assets/img/Groupon.png" height="200" width="300" alt="groupon image" data-toggle="modal" data-target="#project5"><br>
+                          <a href="#" data-toggle="modal" data-target="#project5">Groupon Map</a>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="img-responsive img-center img-rounded" src="assets/img/Feedreader.png" height="200" width="300" alt="feedreader image" data-toggle="modal" data-target="#project6"><br>
+                          <a href="#" data-toggle="modal" data-target="#project6">Feedreader</a>
+                        </div> -->
+                        <!-- <div class="col-md-4">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/bugger.png">
+                                    <img class="img-portfolio img-responsive img-rounded" src="assets/img/bugger.png">
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- /.row (nested) -->
                     <a href="#" class="btn btn-dark">View More Items</a>
@@ -213,7 +222,7 @@
     <footer id="contact" class="sec">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center text-vertical-center">
+                <div id="contact-box" class="col-lg-10 col-lg-offset-1 text-center text-vertical-center">
                   <h2>Contact Me</h2>
                   <hr class='small'>
                     <h4><strong>Rasheed Bustamam</strong></h4>
@@ -239,6 +248,61 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="3" role="dialog" aria-labelledby="proj3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="proj3">Project 3: Bugger Game</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/img/bugger.png" alt="Bugger image">
+            <p>This was my third project in the Nanodegree program. The game was created using HTML Canvas and pseudoclassical JavaScript. Technologies used: HTML5 Canvas, JavaScript, jQuery</p>
+            <p><a href="http://abustamam.github.io/bugger/">Link</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project5" tabindex="5" role="dialog" aria-labelledby="proj5" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="proj5">Project 5: Groupon Map</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/img/Groupon.png" alt="Project 5 image">
+            <p>This was the fifth project of the Udacity Nanodegree Program. The goal was to make an interactive map that shows places of interest nearby. In this case, it was Groupon deals! Technologies used: JavaScript, Gulp.js, Knockout.js</p>
+            <p><a href="http://abustamam.github.io/Neighborhood-Map/">Link</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project6" tabindex="6" role="dialog" aria-labelledby="proj6" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="proj6">Project 6: Feedreader (Jasmine Testing)</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/img/Feedreader.png" alt="Project 6 image">
+            <p>This was the sixth project of the Udacity Nanodegree program. The goal was to make a feedreader by using test-driven development. Technologies used: Jasmine-Node</p>
+            <p><a href="http://abustamam.github.io/feedreader/">Link</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery -->
     <script src="assets/js/jquery.js"></script>
