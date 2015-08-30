@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='portfolio'>
 
 <head>
 
@@ -30,8 +30,7 @@
 
 </head>
 
-<body>
-
+<body ng-controller='PortController as port'>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -169,7 +168,13 @@
                     <h2>Portfolio</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-4">
+                      <div class="col-md-4" ng-repeat = "project in port.items">
+                        <div class="portfolio-item">
+                          <img class="img-portfolio img-responsive img-rounded" alt="{{project.name}}" src="{{project.img}}">
+                          <a href="#">{{project.name}}</a>
+                        </div>
+                      </div>
+                        <!-- <div class="col-md-4">
                             <div class="portfolio-item">
                                 <img class="img-portfolio img-responsive img-rounded" alt="bugger image" src="assets/img/bugger.png" data-toggle="modal" data-target="#project3">
                                 <a href="#" data-toggle="modal" data-target="#project3">Bugger</a>
@@ -186,7 +191,7 @@
                               <img class="img-responsive img-portfolio img-rounded" src="assets/img/Feedreader.png" alt="feedreader image" data-toggle="modal" data-target="#project6">
                               <a href="#" data-toggle="modal" data-target="#project6">Feedreader</a>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div class="col-md-4">
                           <img class="img-responsive img-center img-rounded" src="assets/img/pizza.png" height="200" width="300" alt="pizza image" data-toggle="modal" data-target="#project4"><br>
                           <a href="#" data-toggle="modal" data-target="#project4">Pizzaria</a>
@@ -313,12 +318,15 @@
     <!-- scrollTo plugin -->
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script> -->
-
+    <!--  load angular -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script> -->
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 
