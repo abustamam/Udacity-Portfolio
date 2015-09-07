@@ -158,7 +158,7 @@ hr {
     height:-ms-calc(100% - 50px);
     height:-o-calc(100% - 50px);
     height: calc(100% - 50px);
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .portfolio-item {
