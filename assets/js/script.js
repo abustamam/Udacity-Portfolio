@@ -18,7 +18,7 @@ $(function() {
   });
 
 
-  $("nav li a, .btn").click(function(event){
+  $("nav li a, .btn").not(".link").click(function(event){
     event.preventDefault();
     $.scrollTo(
         $(this).attr("href"),
