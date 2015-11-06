@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://abustamam.github.io/rb-port">Rasheed Bustamam</a>
+          <a class="navbar-brand" href="http://abustamam.github.io/">Rasheed Bustamam</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +65,7 @@
                 <a href="#contact">Contact</a>
             </li>
             <li>
-                <a href="http://abustamam.github.io" target="_blank" class=""><i class="fa fa-external-link"></i> Blog</a>
+                <a href="http://abustamam.github.io/blog" target="_blank" class=""><i class="fa fa-external-link"></i> Blog</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -171,7 +171,7 @@
                     <div class="row">
                         <carousel interval="myInterval" no-wrap="noWrapSlides">
                           <slide ng-repeat="project in slides" active="slide.active">
-                            <img class="img-rounded img-responsive" ng-src="{{project.img}}" style="margin:auto;">
+                            <a ngHref="{{project.url}}"><img class="img-rounded img-responsive"  ng-src="{{project.img}}" style="margin:auto;"></a>
                             <div class="carousel-caption">
                               <h4>{{project.name}}</h4>
                             </div>
