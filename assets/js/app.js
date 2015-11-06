@@ -7,7 +7,7 @@
     { name: 'Bugger', img: 'assets/img/bugger.png', url: '/bugger'},
     { name: 'Pizza', img: 'assets/img/pizza.png', url: '/mobile-portfolio'},
     { name: 'Groupon Locator', img: 'assets/img/Groupon.png', url: '/Neighborhood-Map'},
-    { name: 'Feed-Reader Tester', img: 'assets/img/Feedreader.png', '/feedreader'}
+    { name: 'Feed-Reader Tester', img: 'assets/img/Feedreader.png', url: '/feedreader'}
   ]
 
   app.controller("PortController", ['$scope', function($scope) {
